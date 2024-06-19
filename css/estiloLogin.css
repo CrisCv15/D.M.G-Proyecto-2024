@@ -129,6 +129,11 @@ main{
     display: none;
 }
 
+.rec-cont{
+    padding: 10px 40px;
+    margin-top: 40px;
+}
+
 /*Responsive*/
 
 @media screen  and (max-width: 850px){

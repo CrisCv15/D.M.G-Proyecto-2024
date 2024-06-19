@@ -10,9 +10,10 @@
     $password = hash('sha512', $password);
 
     $queryUser = "INSERT INTO usuario(correo, nombre_completo, telefono, pass) VALUES('$correo', '$nombre_completo', '$telefono', '$password')";
+    
+    $queryCorreo = "SELECT * FROM usuario WHERE correo='$correo'";
 
-
-    $verificar_correo = mysqli_query($conexion, "SELECT * FROM usuario WHERE correo='$correo'");
+    $verificar_correo = mysqli_query($conexion, $queryCorreo);
 
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '
@@ -27,6 +28,7 @@
    if(filter_var($correo, FILTER_VALIDATE_EMAIL)){
 
     $ejecutar = mysqli_query($conexion, $queryUser);
+    
    }
    else{
     echo '
@@ -36,9 +38,6 @@
     </script>
    ';
 }
-
-
-
 
     if($ejecutar){
         echo '

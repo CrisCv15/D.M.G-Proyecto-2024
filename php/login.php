@@ -1,12 +1,3 @@
-<?php
-
-    session_start();
-
-    if(isset($_SESSION['usuario'])){
-        header("location: ../index.php");
-    }
-
-?>
 
 
 <!DOCTYPE html>
@@ -38,7 +29,7 @@
                 </div>
             </div>
             <!--Formulario de login y registro-->
-            <div class="contenedor_login-registro">
+            <div class="contenedor_login-registro" id="contenedor_login-registro">
 
                 <!--login-->
                 <form action="login_usuario_be.php" method="POST" class="formulario_login">

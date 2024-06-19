@@ -1,5 +1,9 @@
 <?php
-    $conexion = mysqli_connect("localhost", "root", "", "proyectodmg");
+$host = "localhost";
+$user = "DMG_user";
+$cont = "DMG.consultas_1515*";
+$bd = "proyectodmg";
+    $conexion = mysqli_connect($host, $user, $cont, $bd);
     
         /*
         if($conexion){

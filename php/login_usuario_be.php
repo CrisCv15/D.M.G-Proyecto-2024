@@ -1,8 +1,10 @@
+
 <?php 
 
     session_start();
 
     include 'conexion_be.php';
+    
 
     $correo = $_POST['correo'];
     $password = $_POST['pass'];
@@ -14,6 +16,9 @@
         $_SESSION['usuario'] = $correo;
         header("location: ../index.php");
         exit();
+
+
+
     }
     else{
      echo '
