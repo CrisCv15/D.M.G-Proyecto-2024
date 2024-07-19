@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-06-2024 a las 21:13:48
+-- Tiempo de generación: 17-07-2024 a las 22:13:43
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -112,7 +112,8 @@ CREATE TABLE `talle_ropa` (
 
 CREATE TABLE `usuario` (
   `correo` varchar(50) NOT NULL,
-  `nombre_completo` varchar(50) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `apellido` varchar(20) NOT NULL,
   `telefono` int(9) NOT NULL,
   `pass` varchar(150) NOT NULL,
   `token` varchar(20) DEFAULT NULL,
@@ -123,8 +124,8 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`correo`, `nombre_completo`, `telefono`, `pass`, `token`, `rol`) VALUES
-('cristian54686725@gmail.com', 'Cristian Vivas', 96838591, 'faed931e757d749a7c6e4ba1cf35aa0cc7a6efe811b913dbf2d485f7c658e90d33f0504fe370fe8abb8555c36c74ec7909835b3bb17bb6e8d5f97204ce06e026', NULL, 'admin');
+INSERT INTO `usuario` (`correo`, `nombre`, `apellido`, `telefono`, `pass`, `token`, `rol`) VALUES
+('cristian54686725@gmail.com', 'Cristian', 'Vivas', 96838591, 'faed931e757d749a7c6e4ba1cf35aa0cc7a6efe811b913dbf2d485f7c658e90d33f0504fe370fe8abb8555c36c74ec7909835b3bb17bb6e8d5f97204ce06e026', NULL, 'admin');
 
 --
 -- Índices para tablas volcadas

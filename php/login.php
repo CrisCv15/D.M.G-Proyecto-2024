@@ -34,7 +34,7 @@
                 <!--login-->
                 <form action="login_usuario_be.php" method="POST" class="formulario_login">
                     <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico" name="correo" required>
+                    <input type="text" placeholder="Correo Electronico" name="correo" required >
                     <input type="password" placeholder="Contraseña" name="pass" required>
                     <button>Entrar</button>
                 </form>
@@ -42,7 +42,8 @@
                 <!--registro-->
                 <form action="registro_usuario_be.php" method="POST" class="formulario_registro">
                     <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Nombre Completo" name="nombre_completo" required>
+                    <input type="text" placeholder="Nombre" name="nombre" required>
+                    <input type="text" placeholder="Apellido" name="apellido" required>
                     <input type="text" placeholder="Correo Electronico" name="correo" required>
                     <input type="text" placeholder="Telefono" name="telefono" required>
                     <input type="password" placeholder="Contraseña" name="pass" required>

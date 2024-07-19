@@ -2,14 +2,15 @@
 
     include 'conexion_be.php';
 
-    $nombre_completo = $_POST['nombre_completo'];
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
     $correo = $_POST['correo'];
     $telefono = $_POST['telefono'];
     $password = $_POST['pass'];
     
     $password = hash('sha512', $password);
 
-    $queryUser = "INSERT INTO usuario(correo, nombre_completo, telefono, pass) VALUES('$correo', '$nombre_completo', '$telefono', '$password')";
+    $queryUser = "INSERT INTO usuario(correo, nombre, apellido, telefono, pass) VALUES('$correo', '$nombre', '$apellido', '$telefono', '$password')";
     
     $queryCorreo = "SELECT * FROM usuario WHERE correo='$correo'";
 

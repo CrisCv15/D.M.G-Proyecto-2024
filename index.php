@@ -39,6 +39,7 @@
         <div class="contenedor_portada">
             <div class="portada">
                 <!-- Contenido de la portada -->
+                 
             </div>
         </div> 
     </main>
